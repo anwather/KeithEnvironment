@@ -80,7 +80,7 @@ resource vms 'Microsoft.Compute/virtualMachines@2022-03-01' = [for (vm, i) in vm
     }
     osProfile: {
       adminUsername: 'keithbl'
-      computerName: '${prefix}-vm01'
+      computerName: '${prefix}-${vm}'
       adminPassword: adminPassword
     }
   }
